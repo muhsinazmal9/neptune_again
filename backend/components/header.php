@@ -4,7 +4,7 @@ if (!isset($_SESSION['select_email'])) {
     header('location: 404.php');
 }
 // universal database connection
-$db_connect = mysqli_connect('localhost', 'root', '', 'neptune_again');
+require_once("../db_connect.php");
 
 $s_id = $_SESSION['select_id'];
 $select_dp = "SELECT profile_photo FROM users WHERE id = '$s_id'";
@@ -71,10 +71,10 @@ require_once('html_syn-head.php');
                             <a href="#">Services<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="sign-in.html">Add Service</a>
+                                    <a href="add_service.php">Add Service</a>
                                 </li>
                                 <li>
-                                    <a href="sign-up.html">View Service</a>
+                                    <a href="view_service.php">View Service</a>
                                 </li>
                             </ul>
                         </li>

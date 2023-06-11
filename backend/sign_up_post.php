@@ -12,7 +12,7 @@ $preg_maa = preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Z])
 // flag
 $flag = false;
 // universal database connection
-$db_connect = mysqli_connect('localhost', 'root', '', 'neptune_again');
+require_once("../db_connect.php");
 
 
 // name input validation

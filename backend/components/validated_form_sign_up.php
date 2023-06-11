@@ -41,7 +41,7 @@
         if (isset($_SESSION['old_password'])) {
             echo $_SESSION['old_password'];
         }?>">
-        <div id="emailHelp" class="form-text m-b-md"><p class="text-danger">Password must be minimum 8 characters length*</p></div>
+        <div id="emailHelp" class="form-text m-b-md ms-4"><p class="text-info">Password must be minimum 8 characters length*</p></div>
 
         <!-- password validation -->
         <?php if(isset($_SESSION['password-error'])):?>
