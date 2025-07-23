@@ -8,9 +8,3 @@ Just clone it & run it with your favorite MySQL sever
 ```bash
 git clone https://github.com/muhsinazmal9/neptune_again.git
 ```
-
-
-
-## License
-
-[Muhsin Azmal](https://github.com/muhsinazmal9)
